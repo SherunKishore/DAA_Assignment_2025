@@ -1,5 +1,6 @@
 
 Length of Longest Increasing Subsequence (LIS):
+https://leetcode.com/problems/longest-increasing-subsequence/description/
 
 Problem Statement: Given an array of integers nums, return the length of the longest strictly increasing subsequence. A subsequence is a sequence formed by deleting some or no elements without changing the order.
 
