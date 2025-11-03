@@ -24,12 +24,7 @@ Algorithm Steps:
 
 3. The length of sub gives the LIS length.
 
-
 Why this works: We don’t store the actual LIS, but the most promising increasing subsequence tails. This ensures sub grows as slowly as possible, giving the LIS length efficiently.
-
-Python Code: from bisect import bisect_left
-
-def lengthOfLIS(nums): sub = [] for x in nums: if len(sub) == 0 or sub[-1] < x: sub.append(x) else: idx = bisect_left(sub, x) sub[idx] = x return len(sub)
 
 Time Complexity: Best Case: O(n log n) — every number processed with binary search
 Average Case: O(n log n)
